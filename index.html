@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="video-container">
+        <video id="videoPlayer" width="800" controls>
+            <source id="videoSource" src="video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="controls">
+            <button id="playPauseBtn">Play</button>
+            <input type="range" id="seekBar" value="0" max="100">
+            <button id="muteBtn">Mute</button>
+            <button id="speedBtn">Speed: 1x</button>
+            <button id="prevBtn">Previous</button>
+            <button id="nextBtn">Next</button>
+            <button id="fullScreenBtn">Full Screen</button>
+            <select id="resolutionSelect">
+                <option value="video1_360p.mp4">360p</option>
+                <option value="video1_480p.mp4">480p</option>
+                <option value="video1_720p.mp4" selected>720p</option>
+                <option value="video1_1080p.mp4">1080p</option>
+            </select>
+
+            <input type="range" id="volumeBar" value="100" max="100">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
